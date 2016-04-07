@@ -1,0 +1,10 @@
+---
+- name: Install drush.
+  homebrew:
+    name: drush
+    state: present
+
+- name: Ensure there is a ~/.drush folder
+  file:
+    path: ~/.drush
+    state: directory
